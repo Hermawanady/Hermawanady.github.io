@@ -3,81 +3,94 @@
 <html>
 <head>
 	<title>Masuk</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-	<div class="container">
-		<div class="logo">
-			<h1>InheAgriculture <i style="margin-left: 20px;" class="fa fa-search"></i></h1>
-			Memudahkan anda dalam bertani
+		<div class="container">
+			<div class="logo">
+				<h1>InheAgriculture <i style="margin-left: 20px;" class="fa fa-search"></i></h1>
+				Memudahkan anda dalam bertani
+			</div>
+			<div class="autentikasi">
+				<a href="masuk.html">Masuk</a>
+				<a href="daftar.html">Daftar</a> 
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Beranda</a></li>
+					<li><a href="agri news.html">Agri News</a></li>
+					<li><a href="agri tips.html">Agri Tips</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="autentikasi">
-			<a href="masuk.html">Masuk</a>
-			<a href="daftar.html">Daftar</a> 
+	</header><main>
+		<div class="container">
+			<h2>Masuk</h2>
+			<div class="content">
+				<div class="login">
+					<form onsubmit="masuk(event)" action="index.html">
+						Email :
+						<br>
+						<input type="email" required>
+						<br>
+						Password :
+						<br>
+						<input type="password" required>
+						<br>
+						<button>Masuk</button>
+						<br>
+						<a href="">lupa password?</a>
+						<br>
+						Belum daftar? <a href="daftar.html">daftar dulu</a>
+					</form>
+				</div>
+			</div>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="index.html">Beranda</a></li>
-				<li><a href="agri news.html">Agri News</a></li>
-				<li><a href="agri tips.html">Agri Tips</a></li>
-			</ul>
-		</nav>
-	</div>
-</header><main>
-	<div class="container">
-		<h2>Login</h2>
-		<div class="content">
-			<div class="login">
-				<form onsubmit="alert('Berhasil Masuk')" action="index.html">
-				Email :
+	</main>
+	
+	<footer>
+		<div class="container">
+			<div class="item">
+				<a href="tentang kami.html">Tentang Kami</a>
 				<br>
-				<input type="email" required>
+				<a href="bantuan.html">Bantuan</a>
 				<br>
-				Password :
+				<a href="kontak kami.html">Kontak Kami</a>
+			</div>
+			<div class="item">
+				Lainnya
 				<br>
-				<input type="password" required>
+				<a href="syarat dan ketentuan.html">Syarat dan Ketentuan</a>
 				<br>
-				<button>Login</button>
+				<a href="kebijakan privasi.html">Kebijakan Privasi</a>
+			</div>
+			<div class="item">
+				Ikuti Kami
 				<br>
-				<a href="">lupa password?</a>
-				<br>
-				Belum daftar? <a href="daftar.html">daftar dulu</a>
-			</form>
+				<a target="_blank" href="https://facebook.com/hehe"><i class="fa fa-facebook"></i> </a>
+				<a target="_blank" href="https://twitter.com/hehe"><i class="fa fa-twitter"></i> </a>
+				<a target="_blank" href="https://instagram.com/hehe"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="copyright">
+				© Copyright Intan Herman
+			</div>
+		</div>
+	</footer>
+	<div id="modalMasuk">
+		<div class="modal fade-in">
+			<div class="modal-kepala">
+				<h4 class="modal-judul">Informasi Masuk</h4>
+			</div>
+			<div class="modal-perut">
+				Berhasil masuk, tunggu beberapa saat anda akan dialihkan ...
 			</div>
 		</div>
 	</div>
-</main>
-	
-	<footer>
-	<div class="container">
-		<div class="item">
-			<a href="tentang kami.html">Tentang Kami</a>
-			<br>
-			<a href="bantuan.html">Bantuan</a>
-			<br>
-			<a href="kontak kami.html">Kontak Kami</a>
-		</div>
-		<div class="item">
-			Lainnya
-			<br>
-			<a href="syarat dan ketentuan.html">Syarat dan Ketentuan</a>
-			<br>
-			<a href="kebijakan privasi.html">Kebijakan Privasi</a>
-		</div>
-		<div class="item">
-			Ikuti Kami
-			<br>
-			<a target="_blank" href="https://facebook.com/hehe"><i class="fa fa-facebook"></i> </a>
-			<a target="_blank" href="https://twitter.com/hehe"><i class="fa fa-twitter"></i> </a>
-			<a target="_blank" href="https://instagram.com/hehe"><i class="fa fa-instagram"></i></a>
-		</div>
-		<div class="copyright">
-			© Copyright Intan Herman
-		</div>
-	</div>
-</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/masuk.js"></script>
 </body>
 </html>

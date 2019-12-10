@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Daftar</title>
+	<title>Daftar</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,7 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				<h1>InheAgriculture <i style="margin-left: 20px;" class="fa fa-search"></i></h1>
+				<h1>InheAgriculture <i class="fa fa-search cari"></i></h1>
 				Memudahkan anda dalam bertani
 			</div>
 			<div class="autentikasi">
@@ -26,25 +26,26 @@
 				</ul>
 			</nav>
 		</div>
-	</header><main>
+	</header>
+	<main>
 		<div class="container">
-			<h2>Register</h2>
+			<h2>Daftar</h2>
 			<div class="content">
 				<div class="login">
-					<form action="akun saya.html">
+					<form action="akun saya.html" onsubmit="return validasi(event)">
 						Nama Lengkap :
 						<br>
-						<input type="text">
+						<input type="text" id="nama_lengkap">
 						No Hp :
 						<br>
-						<input type="text">
+						<input type="text" id="no_hp">
 						Email :
 						<br>
-						<input type="email">
+						<input type="email" id="email">
 						<br>
 						Password :
 						<br>
-						<input type="password">
+						<input type="password" id="password">
 						<br>
 						<button>Daftar</button>
 						<br>
@@ -82,5 +83,7 @@
 				© Copyright Intan Herman
 			</div>
 		</div>
-	</footer></body>
-	</html>
+	</footer>
+	<script src="js/daftar.js"></script>
+</body>
+</html>
